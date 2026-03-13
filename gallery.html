@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css" class="css">
+    <script src="gallery.js"></script>
+</head>
+<body>
+    <section class="gallery">
+<h2>Media Gallery</h2>
+
+<div class="filters">
+<button onclick="filterGallery('all')">All</button>
+<button onclick="filterGallery('screens')">Screenshots</button>
+<button onclick="filterGallery('fanart')">Fan Art</button>
+<button onclick="filterGallery('video')">Videos</button>
+</div>
+
+<div class="grid">
+
+<img class="item screens" src="https://wallpapercave.com/wp/wp2613216.jpg" onclick="openLightbox(this)">
+<img class="item fanart" src="https://wallpapercave.com/wp/wp7091441.jpg" onclick="openLightbox(this)">
+<img class="item screens" src="https://wallpapercave.com/wp/wp2613225.jpg" onclick="openLightbox(this)">
+
+</div>
+</section>
+</body>
+</html>

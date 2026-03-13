@@ -1,0 +1,32 @@
+.gallery{
+background:#101010;
+padding:60px 20px;
+text-align:center;
+}
+
+.gallery h2{
+color:white;
+margin-bottom:30px;
+}
+
+.filters button{
+background:#2e3a2e;
+border:none;
+color:white;
+padding:10px 20px;
+margin:5px;
+cursor:pointer;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.item{
+width:100%;
+border:3px solid #2e3a2e;
+cursor:pointer;
+}
