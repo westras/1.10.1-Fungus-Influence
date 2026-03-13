@@ -1,7 +1,8 @@
-    function changeImage(img, character) {
+  function changeImage(img, character) 
+    {
     const mainImg = document.querySelector(`.character-card .left img.main-img`);
     mainImg.src = img.src;
-  }
+    }
 
   function openLightbox(character) {
     const mainImg = document.querySelector(`.character-card .left img.main-img`);
@@ -11,6 +12,7 @@
     lightbox.style.display = 'flex';
   }
 
-  function closeLightbox() {
+  function closeLightbox() 
+  {
     document.getElementById('lightbox').style.display = 'none';
   }
