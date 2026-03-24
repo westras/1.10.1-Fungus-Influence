@@ -110,6 +110,7 @@ body, html {
 .objects {
     display: none;
 }
+
 nav {
     position: fixed;
     width: 100%;
