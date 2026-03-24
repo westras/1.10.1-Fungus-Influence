@@ -5,36 +5,134 @@
 }
 
 body, html {
-    height: 100vh;
     font-family: 'Arial', sans-serif;
-    background-color: #121212;
-    color: #eaeaea; 
+    background-color: #111111;
+    color: #eaeaea;
+    min-height: 100%;
+    width: 100%;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    padding-top: 80px;
 }
 
 nav {
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    background: rgba(18, 18, 18, 0.8); 
+    background: rgba(27, 27, 27, 0.9);
     z-index: 1000;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 nav a {
-    color: #eaeaea; 
+    color: #eaeaea;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #d35400; 
+    color: #d35400;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    background-color: #2b3b2b;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #8b1a1a; 
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    color: #eaeaea;
+    margin-bottom: 30px;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #eaeaea;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #121212; 
+    color: #eaeaea;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #d35400; 
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.socials .social {
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.socials .social:hover {
+    color: #d35400;
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+        padding: 40px 15px;
+    }
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    }
 }

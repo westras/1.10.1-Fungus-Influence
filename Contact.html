@@ -3,20 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Contact.css" class="css">
+    <title>Contact / Newsletter</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-     <nav>
-    <a href="index.html">Home</a>
-    <a href="Char.html">Characters</a>
-    <a href="Timeline.html">Story</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="Music.html">Music</a>
-    <a href="Quiz.html">Quiz</a>
-    <a href="Contact.html">Contact</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Char.html">Characters</a>
+        <a href="Timeline.html">Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="Music.html">Music</a>
+        <a href="Quiz.html">Quiz</a>
+        <a href="Contact.html">Contact</a>
     </nav>
 
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>Sign up for updates or reach out to us directly.</p>
 
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write your message here..." rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="socials">
+            <a href="#" class="social">Instagram</a>
+            <a href="#" class="social">Twitter</a>
+            <a href="#" class="social">Discord</a>
+        </div>
+    </section>
 </body>
 </html>
