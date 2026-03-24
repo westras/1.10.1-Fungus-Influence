@@ -1,4 +1,3 @@
- 
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +7,8 @@
 body, html {
     height: 100vh;
     font-family: 'Arial', sans-serif;
-    background-color: #1b1b1b;
-    color: #000000;
+    background-color: #121212;
+    color: #eaeaea; 
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -24,25 +23,24 @@ nav {
     justify-content: center;
     gap: 30px;
     padding: 20px;
-    background: rgba(27, 27, 27, 0.6);
+    background: rgba(18, 18, 18, 0.8); 
     z-index: 1000;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 nav a {
-    color: #f5f5f5;
+    color: #eaeaea; 
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #d35400;
+    color: #d35400; 
 }
 
-
 .hero {
-    position:relative;
+    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -52,33 +50,43 @@ nav a:hover {
     overflow: hidden;
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(18, 18, 18, 0.55); 
+    z-index: 1;
+}
 
 .hero-content {
-    height : 85vh;
+    position: relative;
+    z-index: 2;
+    height: 85vh;
     text-align: center;
     margin-top: auto;
     max-width: 800px;
     opacity: 0;
     animation: fadeIn 3s forwards 1s;
-    background: url('Pictures/Ellie&Joel.png')  center no-repeat;
+    background: url('Pictures/Ellie&Joel.png') center no-repeat;
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #d35400;
+    color: #8b1a1a; 
 }
 
 .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 40px;
-   font-weight: bold;
+    font-weight: bold;
+    color: #eaeaea; 
 }
 
 .hero-content a.cta {
     padding: 15px 30px;
-    background-color: #d35400;
-    color: #000000;
+    background-color: #d35400; 
+    color: #121212;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
@@ -86,11 +94,11 @@ nav a:hover {
 }
 
 .hero-content a.cta:hover {
-    background-color: #e67e22;
+    background-color: #e67e22; 
 }
 
 @keyframes fadeIn {
     to {
-    opacity: 1;
+        opacity: 1;
     }
 }
